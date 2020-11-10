@@ -10,7 +10,7 @@ function handleServer(req, res) {
         res.write('Welcome to Dominos!')
         return res.end()
     }else if(url === '/contact'){
-        res.writeHead(200,{'Content-Type':'text/plain'})
+        res.writeHead(200,{'Content-Type':'application/json'})
         res.write(JSON.stringify({
             phone: '18602100000',
             email: 'guestcaredominos@jublfood.com'
